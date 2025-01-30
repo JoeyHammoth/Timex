@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34724EB52D4BD2930080B636 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34724EB42D4BD2930080B636 /* WeSplitApp.swift */; };
+		34724EB52D4BD2930080B636 /* TimexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34724EB42D4BD2930080B636 /* TimexApp.swift */; };
 		34724EB72D4BD2930080B636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34724EB62D4BD2930080B636 /* ContentView.swift */; };
 		34724EB92D4BD2960080B636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34724EB82D4BD2960080B636 /* Assets.xcassets */; };
 		34724EBC2D4BD2960080B636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34724EBB2D4BD2960080B636 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34724EB12D4BD2930080B636 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		34724EB42D4BD2930080B636 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
+		34724EB12D4BD2930080B636 /* Timex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34724EB42D4BD2930080B636 /* TimexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimexApp.swift; sourceTree = "<group>"; };
 		34724EB62D4BD2930080B636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34724EB82D4BD2960080B636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34724EBB2D4BD2960080B636 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		34724EA82D4BD2930080B636 = {
 			isa = PBXGroup;
 			children = (
-				34724EB32D4BD2930080B636 /* WeSplit */,
+				34724EB32D4BD2930080B636 /* Timex */,
 				34724EB22D4BD2930080B636 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +43,20 @@
 		34724EB22D4BD2930080B636 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34724EB12D4BD2930080B636 /* WeSplit.app */,
+				34724EB12D4BD2930080B636 /* Timex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		34724EB32D4BD2930080B636 /* WeSplit */ = {
+		34724EB32D4BD2930080B636 /* Timex */ = {
 			isa = PBXGroup;
 			children = (
-				34724EB42D4BD2930080B636 /* WeSplitApp.swift */,
+				34724EB42D4BD2930080B636 /* TimexApp.swift */,
 				34724EB62D4BD2930080B636 /* ContentView.swift */,
 				34724EB82D4BD2960080B636 /* Assets.xcassets */,
 				34724EBA2D4BD2960080B636 /* Preview Content */,
 			);
-			path = WeSplit;
+			path = Timex;
 			sourceTree = "<group>";
 		};
 		34724EBA2D4BD2960080B636 /* Preview Content */ = {
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		34724EB02D4BD2930080B636 /* WeSplit */ = {
+		34724EB02D4BD2930080B636 /* Timex */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34724EBF2D4BD2960080B636 /* Build configuration list for PBXNativeTarget "WeSplit" */;
+			buildConfigurationList = 34724EBF2D4BD2960080B636 /* Build configuration list for PBXNativeTarget "Timex" */;
 			buildPhases = (
 				34724EAD2D4BD2930080B636 /* Sources */,
 				34724EAE2D4BD2930080B636 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = WeSplit;
+			name = Timex;
 			productName = WeSplit;
-			productReference = 34724EB12D4BD2930080B636 /* WeSplit.app */;
+			productReference = 34724EB12D4BD2930080B636 /* Timex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 34724EAC2D4BD2930080B636 /* Build configuration list for PBXProject "WeSplit" */;
+			buildConfigurationList = 34724EAC2D4BD2930080B636 /* Build configuration list for PBXProject "Timex" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34724EB02D4BD2930080B636 /* WeSplit */,
+				34724EB02D4BD2930080B636 /* Timex */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34724EB72D4BD2930080B636 /* ContentView.swift in Sources */,
-				34724EB52D4BD2930080B636 /* WeSplitApp.swift in Sources */,
+				34724EB52D4BD2930080B636 /* TimexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
 				DEVELOPMENT_TEAM = JXKBNB3B78;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +299,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
 				DEVELOPMENT_TEAM = JXKBNB3B78;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34724EAC2D4BD2930080B636 /* Build configuration list for PBXProject "WeSplit" */ = {
+		34724EAC2D4BD2930080B636 /* Build configuration list for PBXProject "Timex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34724EBD2D4BD2960080B636 /* Debug */,
@@ -334,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34724EBF2D4BD2960080B636 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
+		34724EBF2D4BD2960080B636 /* Build configuration list for PBXNativeTarget "Timex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34724EC02D4BD2960080B636 /* Debug */,

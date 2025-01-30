@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  WeSplit
+//  Timex
 //
 //  Created by James Nikolas on 1/30/25.
 //
@@ -42,6 +42,25 @@ struct Time {
         } else {
             return "\(hour):\(min):\(sec) \(dayType)"
         }
+    }
+}
+
+struct HandView: View {
+    let length: CGFloat
+    let thickness: CGFloat
+    let color: Color
+    
+    init(length: CGFloat, thickness: CGFloat, color: Color = .white) {
+        self.length = length
+        self.thickness = thickness
+        self.color = color
+    }
+    
+    var body: some View {
+        Rectangle()
+            .fill(color)
+            .frame(width: thickness, height: length)
+            .offset(y: -length / 2)  // Align bottom at center
     }
 }
 
@@ -114,9 +133,28 @@ struct ContentView: View {
                     
                 }
                 
+                Section("Clock") {
+                    ZStack {
+                        Circle()
+                            .stroke(lineWidth:10)
+                            .padding(10)
+                        
+                        HandView(length: 120, thickness: 5)
+                            .rotationEffect(.degrees(Double(timex.sec) * 6), anchor: .center)
+                        
+                        HandView(length: 100, thickness: 8)
+                            .rotationEffect(.degrees(Double(timex.min) * 6), anchor: .center)
+                        
+                        HandView(length: 70, thickness: 10)
+                            .rotationEffect(.degrees((Double(timex.hour) * 30) + (Double(timex.min) / 2)), anchor: .center)
+                    }
+                    
+                    
+                }
                 
             }
             .navigationTitle("Welcome to Timex!")
+            
         }
     }
 }
