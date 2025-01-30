@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3423735A2D4BFC6A00C8395A /* clock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 342373562D4BFC6A00C8395A /* clock.jpeg */; };
+		3423735B2D4BFC6A00C8395A /* choice.gif in Resources */ = {isa = PBXBuildFile; fileRef = 342373572D4BFC6A00C8395A /* choice.gif */; };
+		3423735C2D4BFC6A00C8395A /* toggle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 342373582D4BFC6A00C8395A /* toggle.gif */; };
+		3423735D2D4BFC6A00C8395A /* stop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 342373592D4BFC6A00C8395A /* stop.gif */; };
 		34724EB52D4BD2930080B636 /* TimexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34724EB42D4BD2930080B636 /* TimexApp.swift */; };
 		34724EB72D4BD2930080B636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34724EB62D4BD2930080B636 /* ContentView.swift */; };
 		34724EB92D4BD2960080B636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34724EB82D4BD2960080B636 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342373562D4BFC6A00C8395A /* clock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = clock.jpeg; path = ../../../../imgsa/clock.jpeg; sourceTree = "<group>"; };
+		342373572D4BFC6A00C8395A /* choice.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = choice.gif; path = ../../../../imgsa/choice.gif; sourceTree = "<group>"; };
+		342373582D4BFC6A00C8395A /* toggle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = toggle.gif; path = ../../../../imgsa/toggle.gif; sourceTree = "<group>"; };
+		342373592D4BFC6A00C8395A /* stop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = stop.gif; path = ../../../../imgsa/stop.gif; sourceTree = "<group>"; };
 		34724EB12D4BD2930080B636 /* Timex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34724EB42D4BD2930080B636 /* TimexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimexApp.swift; sourceTree = "<group>"; };
 		34724EB62D4BD2930080B636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342373552D4BFC3900C8395A /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				342373572D4BFC6A00C8395A /* choice.gif */,
+				342373562D4BFC6A00C8395A /* clock.jpeg */,
+				342373592D4BFC6A00C8395A /* stop.gif */,
+				342373582D4BFC6A00C8395A /* toggle.gif */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
 		34724EA82D4BD2930080B636 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +70,7 @@
 		34724EB32D4BD2930080B636 /* Timex */ = {
 			isa = PBXGroup;
 			children = (
+				342373552D4BFC3900C8395A /* photos */,
 				34724EB42D4BD2930080B636 /* TimexApp.swift */,
 				34724EB62D4BD2930080B636 /* ContentView.swift */,
 				34724EB82D4BD2960080B636 /* Assets.xcassets */,
@@ -125,8 +145,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3423735C2D4BFC6A00C8395A /* toggle.gif in Resources */,
 				34724EBC2D4BD2960080B636 /* Preview Assets.xcassets in Resources */,
+				3423735B2D4BFC6A00C8395A /* choice.gif in Resources */,
 				34724EB92D4BD2960080B636 /* Assets.xcassets in Resources */,
+				3423735D2D4BFC6A00C8395A /* stop.gif in Resources */,
+				3423735A2D4BFC6A00C8395A /* clock.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
