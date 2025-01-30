@@ -2,7 +2,7 @@
 
 <img src="https://github.com/JoeyHammoth/Timex/blob/main/clock.jpeg" alt="logo" width="250">
 
-A simple custom clock application built with SwiftUI that let's you set whatever time you want and start/stop the clock at your leisure. 
+A simple custom clock application built with SwiftUI that let's you set whatever time you want and start/stop the clock at your leisure. Documentation can be found [here](https://joeyhammoth.github.io/Timex/).
 
 ## 📌 Features
 
