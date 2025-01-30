@@ -76,6 +76,14 @@ struct ContentView: View {
         }
     }
     
+    var darkMode: Bool {
+        if timex.dayType == "AM" {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     @State var start: Bool = false
     @State var timer: Timer? = nil
     @State var input: String = ""
@@ -139,13 +147,13 @@ struct ContentView: View {
                             .stroke(lineWidth:10)
                             .padding(10)
                         
-                        HandView(length: 120, thickness: 5)
+                        HandView(length: 120, thickness: 5, color: darkMode ? .white : .black)
                             .rotationEffect(.degrees(Double(timex.sec) * 6), anchor: .center)
                         
-                        HandView(length: 100, thickness: 8)
+                        HandView(length: 100, thickness: 8, color: darkMode ? .white : .black)
                             .rotationEffect(.degrees(Double(timex.min) * 6), anchor: .center)
                         
-                        HandView(length: 70, thickness: 10)
+                        HandView(length: 70, thickness: 10, color: darkMode ? .white : .black)
                             .rotationEffect(.degrees((Double(timex.hour) * 30) + (Double(timex.min) / 2)), anchor: .center)
                     }
                     
@@ -156,6 +164,7 @@ struct ContentView: View {
             .navigationTitle("Welcome to Timex!")
             
         }
+        .preferredColorScheme(darkMode ? .dark : .light)
     }
 }
 
