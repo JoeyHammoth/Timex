@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timex - Time</title>
+    <link rel="stylesheet" type="text/css" href="/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="/">
+            <strong>
+                Timex
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#time.hour">hour</a></li><li class="variable"><a href="#time.min">min</a></li><li class="variable"><a href="#time.sec">sec</a></li><li class="variable"><a href="#time.daytype">day​Type</a></li><li class="variable"><a href="#time.time">time</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Structure</small>
+    <code class="name">Time</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">struct</span> <span class="type">Time</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>A struct representing a time value with hour, minute, second, and day type.
+The struct provides computed properties for formatted time display and
+adjusts minutes and seconds when their values exceed 59.</p>
+
+</div>
+
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="time.hour">
+    <h3>
+        <code><a href="#time.hour">hour</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">var</span> <span class="variable">hour</span>: <span class="type">Int</span></body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>The hour component of the time (0-23).</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="time.min">
+    <h3>
+        <code><a href="#time.min">min</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">var</span> <span class="variable">min</span>: <span class="type">Int</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>The minute component of the time (0-59).</p>
+
+</div>
+<div class="discussion">
+    <p>When set, if the minute value exceeds 59, the minute is reset to 0
+and the hour is incremented by 1.</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="time.sec">
+    <h3>
+        <code><a href="#time.sec">sec</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">var</span> <span class="variable">sec</span>: <span class="type">Int</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>The second component of the time (0-59).</p>
+
+</div>
+<div class="discussion">
+    <p>When set, if the second value exceeds 59, the second is reset to 0
+and the minute is incremented by 1.</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="time.daytype">
+    <h3>
+        <code><a href="#time.daytype">day​Type</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">var</span> <span class="variable">dayType</span>: <span class="type">String</span></body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>A string representing the type of day (e.g., &quot;AM&quot; or &quot;PM&quot;).</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="time.time">
+    <h3>
+        <code><a href="#time.time">time</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">var</span> <span class="variable">time</span>: <span class="type">String</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>A computed property that returns the formatted time as a string.</p>
+
+</div>
+<div class="discussion">
+    <p>The formatted time string is in the format:
+&quot;HH:MM:SS AM/PM&quot; or &quot;HH:MM:SS&quot; depending on the day type.</p>
+
+<ul>
+<li>
+<p>If hour, minute, or second is less than 10, it will be prefixed with a zero.</p>
+</li>
+</ul>
+
+<p>Example:</p>
+
+<ul>
+<li>
+<p>&quot;05:09:03 PM&quot;</p>
+</li>
+<li>
+<p>&quot;10:05:02 AM&quot;</p>
+</li>
+</ul>
+
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2025-01-31T04:14:04+0700">January 31, 2025</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>
