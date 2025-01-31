@@ -13,7 +13,13 @@ import SwiftUI
 struct Time {
     
     /// The hour component of the time (0-23).
-    var hour: Int
+    var hour: Int {
+        didSet {
+            if hour > 12 {
+                hour = 1
+            }
+        }
+    }
     
     /// The minute component of the time (0-59).
     ///
@@ -144,7 +150,7 @@ struct ContentView: View {
     @State var input: String = ""
     
     /// A state variable that represents the time object, including hour, minute, second, and day type (AM/PM).
-    @State var timex = Time(hour: 0, min: 0, sec: 0, dayType: "AM")
+    @State var timex = Time(hour: 12, min: 0, sec: 0, dayType: "AM")
     
     /// The body of the view, which describes the user interface of the application.
     var body: some View {
@@ -169,17 +175,17 @@ struct ContentView: View {
                 /// Section for selecting the hour, minute, and second of the time.
                 Section("Details") {
                     Picker("Hour", selection: $timex.hour) {
-                        ForEach(0...12, id: \.self) {
+                        ForEach(1...12, id: \.self) {
                             Text("\($0)")
                         }
                     }
                     Picker("Minute", selection: $timex.min) {
-                        ForEach(0...60, id: \.self) {
+                        ForEach(0..<60, id: \.self) {
                             Text("\($0)")
                         }
                     }
                     Picker("Second", selection: $timex.sec) {
-                        ForEach(0...60, id: \.self) {
+                        ForEach(0..<60, id: \.self) {
                             Text("\($0)")
                         }
                     }
