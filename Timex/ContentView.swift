@@ -12,7 +12,7 @@ import SwiftUI
 /// adjusts minutes and seconds when their values exceed 59.
 struct Time {
     
-    /// The hour component of the time (0-23).
+    /// The hour component of the time (1-12).
     var hour: Int {
         didSet {
             if hour > 12 {
